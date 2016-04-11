@@ -1,0 +1,25 @@
+{
+  "name": "binding-angular",
+  "description": "Angular starter project",
+  "main": "index.js",
+  "authors": [
+    "Eka Rudianto"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "modernizr": "^3.3.1",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
