@@ -1,7 +1,6 @@
-$(function () {
+var $ = require('jquery');
 
-    var cingcai = "cingcai";
-
-    return cingcai;
-
+$(document).ready(function () {
+    console.log("oioi");
+    console.log("aiaiai");
 });

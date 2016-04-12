@@ -7,11 +7,17 @@ module.exports = {
     output: {
         filename: 'bundle.min.js'
     },
+    resolve: {
+        modulesDirectories: ['app/vendors', 'node_modules']
+    },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
             }
-        })
+        }),
+        new webpack.ResolverPlugin(
+            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main'])
+        )
     ]
 };
