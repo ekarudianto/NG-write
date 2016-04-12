@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='en' ng-app)
 
     head
         title Binding angular starter template
@@ -11,8 +11,7 @@ html(lang='en')
         meta(name='viewport', content='initial-scale=1')
 
         link(rel='shortcut icon', href='favicon.ico')
-
-        link(rel='stylesheet', href='styles/main.css')
+        link(rel='stylesheet', href='styles/style.css')
 
     body
         //if lt IE 7
@@ -23,7 +22,7 @@ html(lang='en')
               a(href='http://www.google.com/chromeframe/?redirect=true') install Google Chrome Frame
               | to better experience this site.
 
-        #content(ng-view='')
+        //#content(ng-view='')
         p This is Binding angular starter template
 
-        script(src='bundle.min.js')
+        script(src='bundle.js')

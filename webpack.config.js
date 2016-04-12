@@ -5,7 +5,7 @@ module.exports = {
         './app/scripts/index.js'
     ],
     output: {
-        filename: 'bundle.min.js'
+        filename: 'bundle.js'
     },
     resolve: {
         modulesDirectories: ['app/vendors', 'node_modules']

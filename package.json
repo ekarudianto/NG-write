@@ -13,10 +13,10 @@
     "gulp-clean": "^0.3.2",
     "gulp-connect": "^3.2.2",
     "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
     "gulp-sync": "^0.1.4",
     "gulp-util": "^3.0.7",
     "webpack": "^1.12.15",
-    "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {}

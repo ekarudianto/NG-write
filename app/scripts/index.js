@@ -1,6 +1,9 @@
-var $ = require('jquery');
+'use strict';
 
-$(document).ready(function () {
-    console.log("oioi");
-    console.log("aiaiai");
-});
+var angular = require('angular'),
+    //$ = require('jquery'),
+
+    MODULE_NAME = 'myApp';
+
+
+console.log(angular);
