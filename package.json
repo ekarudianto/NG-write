@@ -9,6 +9,7 @@
   "author": "Eka Rudianto",
   "license": "MIT",
   "devDependencies": {
+    "exports-loader": "^0.6.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-connect": "^3.2.2",

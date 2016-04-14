@@ -1,9 +1,11 @@
 'use strict';
 
-var angular = require('angular'),
-    //$ = require('jquery'),
+var $ = require('jquery');
 
-    MODULE_NAME = 'myApp';
+require('angular-route');
 
+var app = angular.module('app', [
+    'ngRoute'
+    ]);
 
-console.log(angular);
+module.exports = app;
