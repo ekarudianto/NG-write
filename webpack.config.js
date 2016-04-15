@@ -2,13 +2,16 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: [
-        './app/scripts/index.js'
+        __dirname + '/app/scripts/index.js'
     ],
     output: {
         filename: 'bundle.js'
     },
     resolve: {
-        modulesDirectories: ['app/vendors', 'node_modules']
+        modulesDirectories: [
+            __dirname + '/app/vendors',
+            __dirname + '/node_modules'
+        ]
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
