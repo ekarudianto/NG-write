@@ -1,11 +1,7 @@
 'use strict';
 
-var $ = require('jquery');
-
+require('angular');
 require('angular-route');
+require('angular-cookies');
 
-var app = angular.module('app', [
-    'ngRoute'
-    ]);
-
-module.exports = app;
+require('./app');

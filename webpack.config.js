@@ -20,7 +20,8 @@ module.exports = {
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main'])
         ),
         new webpack.ProvidePlugin({
-            'angular': 'exports?window.angular!angular'
+            //'angular': 'exports?window.angular!angular',
+            $: "jquery"
         })
     ]
 };
