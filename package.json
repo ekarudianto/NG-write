@@ -17,6 +17,12 @@
     "gulp-sass": "^2.2.0",
     "gulp-sync": "^0.1.4",
     "gulp-util": "^3.0.7",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-webpack": "^1.7.0",
+    "phantomjs-prebuilt": "^2.1.7",
     "webpack": "^1.12.15",
     "webpack-stream": "^3.1.0"
   },

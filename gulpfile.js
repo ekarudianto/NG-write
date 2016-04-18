@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     gulpsync = require('gulp-sync')(gulp),
     sass = require('gulp-sass'),
+    Server = require('karma').Server,
 
     LIVERELOAD_PORT = 35730,
     mountFolder = function (connect, dir) {
@@ -86,6 +87,15 @@ gulp.task('watch', function () {
 gulp.task('reload', function () {
     return gulp.src('.tmp')
         .pipe(connect.reload());
+});
+
+gulp.task('test:unit', function () {
+
+    new Server({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }).start();
+
 });
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));
