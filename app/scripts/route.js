@@ -8,7 +8,8 @@ module.exports = [
         $routeProvider
             .when('/home',
                 {
-                    controller: 'home'
+                    controller: 'home',
+                    templateUrl: 'views/home.html'
                 })
             .otherwise({
                 redirectTo: '/home'
