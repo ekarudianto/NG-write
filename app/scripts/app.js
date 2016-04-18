@@ -9,13 +9,13 @@ var app = angular.module('app', [
  * config collections
  */
 
-app.config(require('./route'));
+app.config(require('./app.routes'));
 
 /**
  * constant / value collections
  */
 
-app.constant('CONFIG', require('./config'));
+app.constant('CONFIG', require('./app.config'));
 
 /**
  * controller collections
@@ -33,6 +33,6 @@ app.directive('version', require('./directives/version-directive'));
  * run method
  */
 
-app.run(require('./run'));
+app.run(require('./app.run'));
 
 module.exports = app;
