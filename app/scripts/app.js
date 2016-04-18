@@ -2,12 +2,14 @@
 
 require('./controllers/controllers');
 require('./directives/directives');
+require('./filters/filters');
 
 var app = angular.module('app', [
     'ngRoute',
     'ngCookies',
     'app.controllers',
-    'app.directives'
+    'app.directives',
+    'app.filters'
 ]);
 
 /**
@@ -21,12 +23,6 @@ app.config(require('./app.routes'));
  */
 
 app.constant('CONFIG', require('./app.config'));
-
-/**
- * filter collections
- */
-
-app.filter('interpolate', require('./filters/interpolate-filter'));
 
 /**
  * service collections
