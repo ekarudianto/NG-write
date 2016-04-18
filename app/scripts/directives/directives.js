@@ -8,4 +8,8 @@ var directives = angular.module('app.directives', []);
 
 directives.directive('version', require('./version-directive'));
 
+/**
+ * exports module
+ */
+
 module.exports = directives;

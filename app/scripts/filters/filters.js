@@ -8,4 +8,8 @@ var filters = angular.module('app.filters', []);
 
 filters.filter('interpolate', require('./interpolate-filter'));
 
+/**
+ * exports module
+ */
+
 module.exports = filters;

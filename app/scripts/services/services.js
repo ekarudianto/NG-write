@@ -8,4 +8,8 @@ var services = angular.module('app.services', []);
 
 services.factory('creatorService', require('./creator-service'));
 
+/**
+ * exports module
+ */
+
 module.exports = services;

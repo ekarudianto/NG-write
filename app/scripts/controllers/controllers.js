@@ -8,4 +8,8 @@ var controllers = angular.module('app.controllers', []);
 
 controllers.controller('homeCtrl', require('./home-controller'));
 
+/**
+ * exports module
+ */
+
 module.exports = controllers;

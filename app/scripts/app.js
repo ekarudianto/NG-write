@@ -32,4 +32,8 @@ app.constant('CONFIG', require('./app.config'));
 
 app.run(require('./app.run'));
 
+/**
+ * exports module
+ */
+
 module.exports = app;
