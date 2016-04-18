@@ -36,6 +36,12 @@ app.directive('version', require('./directives/version-directive'));
 app.filter('interpolate', require('./filters/interpolate-filter'));
 
 /**
+ * service collections
+ */
+
+app.factory('creatorService', require('./services/creator-service'));
+
+/**
  * run method
  */
 
