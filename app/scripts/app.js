@@ -30,6 +30,12 @@ app.controller('home', require('./controllers/home-controller'));
 app.directive('version', require('./directives/version-directive'));
 
 /**
+ * filter collections
+ */
+
+app.filter('interpolate', require('./filters/interpolate-filter'));
+
+/**
  * run method
  */
 
