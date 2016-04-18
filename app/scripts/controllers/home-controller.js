@@ -5,5 +5,7 @@ module.exports = [
     'creatorService',
     function ($scope,
               creatorService) {
+
         $scope.creator = creatorService.get();
+
     }];

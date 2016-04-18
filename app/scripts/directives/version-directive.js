@@ -5,7 +5,9 @@ module.exports = ['CONFIG', function (CONFIG) {
         restrict: 'EA',
         template: 'Version : <strong>{{version}}</strong>',
         controller: ['$scope', function ($scope) {
+
             $scope.version = CONFIG.version;
+
         }]
     }
 }];
