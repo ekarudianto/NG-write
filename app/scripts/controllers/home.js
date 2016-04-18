@@ -2,6 +2,7 @@
 
 module.exports = [
     '$scope',
-    function ($scope) {
+    'CONFIG',
+    function ($scope, CONFIG) {
         $scope.test = "hello";
     }];
