@@ -8,7 +8,7 @@ module.exports = [
         $routeProvider
             .when('/home',
                 {
-                    controller: 'home',
+                    controller: 'homeCtrl',
                     templateUrl: 'views/home.html'
                 })
             .otherwise({

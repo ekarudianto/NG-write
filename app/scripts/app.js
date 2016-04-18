@@ -1,8 +1,11 @@
 'use strict';
 
+require('./controllers/controllers');
+
 var app = angular.module('app', [
     'ngRoute',
-    'ngCookies'
+    'ngCookies',
+    'app.controllers'
 ]);
 
 /**
@@ -16,12 +19,6 @@ app.config(require('./app.routes'));
  */
 
 app.constant('CONFIG', require('./app.config'));
-
-/**
- * controller collections
- */
-
-app.controller('home', require('./controllers/home-controller'));
 
 /**
  * directive collections
