@@ -2,7 +2,8 @@
 
 module.exports = [
     '$scope',
-    'CONFIG',
-    function ($scope, CONFIG) {
-        $scope.test = "hello";
+    'creatorService',
+    function ($scope,
+              creatorService) {
+        $scope.creator = creatorService.get();
     }];
