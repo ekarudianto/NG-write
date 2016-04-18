@@ -21,13 +21,13 @@ app.constant('CONFIG', require('./config'));
  * controller collections
  */
 
-app.controller('home', require('./controllers/home'));
+app.controller('home', require('./controllers/home-controller'));
 
 /**
  * directive collections
  */
 
-app.directive('version', require('./directives/version'));
+app.directive('version', require('./directives/version-directive'));
 
 /**
  * run method
