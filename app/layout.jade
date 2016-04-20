@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+
+    head
+        title Binding angular starter template
+
+        block head
+        block icons
+
+        link(rel='stylesheet', href='styles/style.css')
+
+    body
+
+        block iestuff
+        block navbar
+
+        #content(ng-view='')
+            p This is Binding angular starter template
+
+        block footer
+
+        script(src='bundle.js')

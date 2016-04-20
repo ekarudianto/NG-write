@@ -27,7 +27,7 @@ gulp.task('clean', function () {
 
 gulp.task('copy', function () {
     return gulp.src([
-            './' + config.app + '/*.jade',
+            './' + config.app + '/index.jade',
             './' + config.app + '/views/*.jade',
             './' + config.app + '/views/**/*.jade'
         ], {base: config.app})
