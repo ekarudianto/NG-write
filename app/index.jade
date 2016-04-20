@@ -24,5 +24,18 @@ block iestuff
         script(src='vendors/json3/lib/json3.min.js')
 
 block navbar
+    nav.navbar.navbar-default
+        .container
+            .navbar-header
+                button.navbar-toggle.collapsed(data-toggle='collapse' data-target='#navbar-menu' aria-expanded='false')
+                    span.sr-only
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#') Logo
+            #navbar-menu.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li.active
+                        a(href='#') Link
 
 block footer
