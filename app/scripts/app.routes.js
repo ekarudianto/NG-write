@@ -11,6 +11,11 @@ module.exports = [
                     controller: 'homeCtrl',
                     templateUrl: 'views/home.html'
                 })
+            .when('/how',
+                {
+                    controller: 'howToCtrl',
+                    templateUrl: 'views/how.html'
+                })
             .otherwise({
                 redirectTo: '/home'
             });

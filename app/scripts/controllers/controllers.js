@@ -7,6 +7,7 @@ var controllers = angular.module('app.controllers', []);
  */
 
 controllers.controller('homeCtrl', require('./home-controller'));
+controllers.controller('howToCtrl', require('./how-to-use-controller'));
 
 /**
  * exports module
