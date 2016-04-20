@@ -4,6 +4,7 @@ require('./controllers/controllers');
 require('./directives/directives');
 require('./filters/filters');
 require('./services/services');
+require('./app.bootstrap');
 
 var app = angular.module('app', [
     'ngRoute',
@@ -31,14 +32,6 @@ app.constant('CONFIG', require('./app.config'));
  */
 
 app.run(require('./app.run'));
-
-/**
- * manual bootstraping
- */
-
-angular.element(document).ready(function () {
-    angular.bootstrap(document, ['app']);
-});
 
 /**
  * exports module
