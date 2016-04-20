@@ -33,6 +33,14 @@ app.constant('CONFIG', require('./app.config'));
 app.run(require('./app.run'));
 
 /**
+ * manual bootstraping
+ */
+
+angular.element(document).ready(function () {
+    angular.bootstrap(document, ['app']);
+});
+
+/**
  * exports module
  */
 
