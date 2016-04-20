@@ -1,7 +1,9 @@
-describe('Home controller', function () {
+describe('Home controller testcases :', function () {
 
     beforeEach(module('app.controllers'));
     beforeEach(module('app.services'));
+    beforeEach(module('app.directives'));
+    beforeEach(module('app.filters'));
 
     beforeEach(inject(function (_$controller_, _$rootScope_) {
         this.$controller = _$controller_;
@@ -13,11 +15,11 @@ describe('Home controller', function () {
         });
     }));
 
-    it('controller must exist', function () {
+    it('Must verify that the controller is exist', function () {
         expect(this.Ctrl).not.toEqual(null);
     });
 
-    it('should print creator service correct value', function () {
+    it('Should print creatorService correct value', function () {
         expect(this.$scope.creator).toBe('Eka Rudianto');
     });
 
