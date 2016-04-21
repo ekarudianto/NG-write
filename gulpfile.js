@@ -27,9 +27,8 @@ gulp.task('clean', function () {
 
 gulp.task('copy', function () {
     return gulp.src([
-            './' + config.app + '/index.jade',
-            './' + config.app + '/views/*.jade',
-            './' + config.app + '/views/**/*.jade'
+            config.app + '/index.jade',
+            config.app + '/views/**/*.jade'
         ], {base: config.app})
         .pipe(jade({
             pretty: true
@@ -76,12 +75,12 @@ gulp.task('connect', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./' + config.app + '/scripts/**/*.js', gulpsync.sync(['create-bundle', 'reload']));
-    gulp.watch('./' + config.app + '/styles/**/*.scss', gulpsync.sync(['sass', 'reload']));
+    gulp.watch(config.app + '/scripts/**/*.js', gulpsync.sync(['create-bundle', 'reload']));
+    gulp.watch(config.app + '/styles/**/*.scss', gulpsync.sync(['sass', 'reload']));
     gulp.watch([
-        './' + config.app + '/*.jade',
-        './' + config.app + '/views/**/*.jade'
-    ], gulpsync.sync(['copy', 'reload']));
+            config.app + '/*.jade',
+            config.app + '/views/**/*.jade'
+        ], gulpsync.sync(['copy', 'reload']));
 });
 
 gulp.task('reload', function () {
