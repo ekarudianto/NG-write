@@ -8,7 +8,7 @@ module.exports = function (config) {
         files: [
             'app/scripts/index.js',
             'app/vendors/angular-mocks/angular-mocks.js',
-            'test/**/*.spec.js'
+            'test/unit/**/*.spec.js'
         ],
         frameworks: ['jasmine'],
         preprocessors: {
