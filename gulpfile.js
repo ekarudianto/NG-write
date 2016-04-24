@@ -103,14 +103,11 @@ gulp.task('test:end', ['webdriver_update'], function () {
 
     gulp.src('./test/e2e/**/*.spec.js')
         .pipe(protractor({
-            configFile: 'protractor.conf.js',
-            //debug: true,
-            //autoStartStopServer: true
+            configFile: 'protractor.conf.js'
         }))
 
-})
+});
 
-// Downloads the selenium webdriver
 gulp.task('webdriver_update', webdriver_update);
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));
