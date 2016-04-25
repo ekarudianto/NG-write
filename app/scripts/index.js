@@ -8,9 +8,7 @@ require('angular');
 require('angular-route');
 require('angular-cookies');
 
-var $ = require('jquery');
-window.$ = $;
-window.jQuery = $;
+require('expose?$!expose?jQuery!jquery');
 require('bootstrap-sass');
 
 /**
