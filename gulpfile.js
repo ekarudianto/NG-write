@@ -90,6 +90,8 @@ gulp.task('reload', function () {
         .pipe(connect.reload());
 });
 
+gulp.task('webdriver_update', webdriver_update);
+
 gulp.task('test:unit', function () {
 
     new Server({
@@ -107,7 +109,5 @@ gulp.task('test:end', ['webdriver_update'], function () {
         }))
 
 });
-
-gulp.task('webdriver_update', webdriver_update);
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));

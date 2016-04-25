@@ -1,33 +1,61 @@
-html,
-body {
-    width: 100%;
-    height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-.footer.sticky {
-    position: absolute;
+body {
+    margin-bottom: 50px;
+}
+
+#content {
+    min-height: 100%;
+    height: 100%;
+    height: auto !important;
+}
+
+.footer {
     width: 100%;
-    min-height: 30px;
-    bottom: 0;
     padding-top: 15px;
     padding-bottom: 15px;
     background: #F8F8F8;
     border-top: 1px solid #d4d4d4;
 }
 
+.footer.sticky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .align-left {
-    text-align: left;
+    @include alignment(left);
 }
 
 .align-right {
-    text-align: right;
+    @include alignment(right);
 }
 
 .align-center {
-    text-align: center;
+    @include alignment(center);
 }
 
 .btn-title {
     padding: 15px 20px;
     font-size: 2em;
+}
+
+pre {
+    margin-top: 10px;
+    @include border-radius(3px);
+    padding: 15px 20px;
+}
+
+ol {
+    li {
+        margin-bottom: 10px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
 }
