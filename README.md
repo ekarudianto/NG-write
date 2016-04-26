@@ -4,7 +4,7 @@ A starter angularjs template project using the compilation of several tools and 
 
 ### Table of contents
     
-    - [Installation](#installation)
+* [Installation](#installation)
 
 ### Installation
 
