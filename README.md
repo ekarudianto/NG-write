@@ -2,6 +2,10 @@
 
 A starter angularjs template project using the compilation of several tools and frameworks which are Angularjs, HTML 5 Boilerplate, Twitter bootsrap, Jade template engine, Gulp, Webpack, Karma, Protractor and many others !
 
+### Table of contents
+    
+    [Installation](#installation)
+
 ### Installation
 
 - Please make sure that nodejs is installed in your system. Check nodejs [Here](https://nodejs.org/en/).
