@@ -250,6 +250,27 @@ gulp.task('watch:dist', function () {
 gulp.task('webdriver_update', webdriver_update);
 
 /**
+ * Task for copying server configs such as apache server config, humans.txt, robots.txt, etc
+ */
+
+gulp.task('copy-server-configs', function () {
+
+    return gulp.src([
+            config.app + '/.htaccess',
+            config.app + '/apple-touch-icon.png',
+            config.app + '/browserconfig.xml',
+            config.app + '/crossdomain.xml',
+            config.app + '/favicon.ico',
+            config.app + '/humans.txt',
+            config.app + '/robots.txt',
+            config.app + '/tile.png',
+            config.app + '/tile-wide.png'
+        ])
+        .pipe(gulp.dest(__dirname + '/' + config.dist + '/'));
+
+});
+
+/**
  * Main tasks
  **/
 
@@ -273,7 +294,7 @@ gulp.task('test:end', ['webdriver_update'], function () {
 
 gulp.task('default', ['build']);
 
-gulp.task('build', gulpsync.sync(['clean:dist', 'copy:dist', 'create-bundle:dist', 'sass:dist']));
+gulp.task('build', gulpsync.sync(['clean:dist', 'copy:dist', 'create-bundle:dist', 'sass:dist', 'copy-server-configs']));
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));
 
