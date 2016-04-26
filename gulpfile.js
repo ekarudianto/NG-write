@@ -29,11 +29,19 @@ var gulp = require('gulp'),
         dist: 'dist'
     };
 
+/**
+ * used for cleanning up the file projects
+ **/
+
 function cleanDir(packg) {
     var dir = (packg === config.app) ? '.tmp' : [config.dist + '/*', config.dist + '/.*'];
     return gulp.src(dir, {read: false})
         .pipe(clean());
 }
+
+/**
+ * used for copying the views
+ **/
 
 function copyViews(packg) {
     var dir = (packg === config.app) ? '.tmp' : config.dist;
@@ -52,6 +60,10 @@ function copyViews(packg) {
         }));
 }
 
+/**
+ * used for compiling the sass files and copy it to certain destination
+ **/
+
 function compileSass(packg) {
     var dir = (packg === config.app) ? '.tmp' : config.dist;
     return gulp.src(config.app + '/styles/style.scss')
@@ -62,6 +74,10 @@ function compileSass(packg) {
         }));
 }
 
+/**
+ * used for making a bundling using webpack plugin
+ **/
+
 function compileBundle(packg) {
     var dir = (packg === config.app) ? '.tmp' : config.dist;
     return gulp.src(config.app + '/scripts/index.js')
@@ -71,6 +87,10 @@ function compileBundle(packg) {
             return dir;
         }));
 }
+
+/**
+ * used for creating a web server
+ **/
 
 function createWebServer(packg) {
     var root = (packg === config.app) ? config.app : config.dist;
@@ -103,11 +123,19 @@ function createWebServer(packg) {
     });
 }
 
+/**
+ * used for refreshing a browser if livereload detects a changes
+ **/
+
 function reload(packg) {
     var dir = (packg === config.app) ? '.tmp' : './' + config.dist + '/**';
     return gulp.src(dir)
         .pipe(connect.reload());
 }
+
+/**
+ * used for implementing a watcher, watching for a changes and do some task accordingly
+ **/
 
 function watcher(packg) {
     if (packg === config.app) {
