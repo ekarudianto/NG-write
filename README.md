@@ -6,6 +6,7 @@ A starter angularjs template project using the compilation of several tools and 
 
 - Please make sure that nodejs is installed in your system. Check nodejs [Here](https://nodejs.org/en/).
 - Please install **Gulp** and **Bower** for managing your task runners and dependency management globally by running this command on your command line interface.
+
   ```
   npm install -g gulp-cli bower
   ```
