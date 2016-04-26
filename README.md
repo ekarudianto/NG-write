@@ -5,6 +5,7 @@ A starter angularjs template project using the compilation of several tools and 
 ### Table of contents
     
 * [Installation](#installation)
+* [Gulp tasks]()
 
 ### Installation
 
@@ -30,5 +31,21 @@ A starter angularjs template project using the compilation of several tools and 
   gulp server
   ```  
 
+### Gulp tasks
+
+Below are several main tasks that this project has :
+
+* ```default```
+    * It will run a ```build``` gulp task.
+* ```server```
+    * Start a dev server using ```gulp-connect```, serving the app folder.
+* ```server:dist```
+    * Start a dev server using ```gulp-connect```, serving the distribution folder.
+* ```build```
+    * Build a distribution package. All of the packages are stored on distribution folder.        
+* ```test:unit```
+    * Start a unit testing using ```Karma```.
+* ```test:end```
+    * Start an end to end testing using ```Protractor```.    
 
 
