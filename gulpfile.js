@@ -271,6 +271,17 @@ gulp.task('copy-server-configs', function () {
 });
 
 /**
+ * Task for copying application vendors to distribution folder
+ */
+
+gulp.task('copy-vendors', function () {
+
+    return gulp.src(config.app + '/vendors/**')
+        .pipe(gulp.dest(__dirname + '/' + config.dist + '/vendors/'));
+
+});
+
+/**
  * Main tasks
  **/
 
@@ -294,7 +305,7 @@ gulp.task('test:end', ['webdriver_update'], function () {
 
 gulp.task('default', ['build']);
 
-gulp.task('build', gulpsync.sync(['clean:dist', 'copy:dist', 'create-bundle:dist', 'sass:dist', 'copy-server-configs']));
+gulp.task('build', gulpsync.sync(['clean:dist', 'copy:dist', 'create-bundle:dist', 'sass:dist', 'copy-server-configs', 'copy-vendors']));
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));
 
