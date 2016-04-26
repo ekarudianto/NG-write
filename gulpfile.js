@@ -124,7 +124,7 @@ function createWebServer(packg) {
 }
 
 /**
- * used for refreshing a browser if livereload detects a changes
+ * used for refreshing a browser if theres a changes detected by livereload
  **/
 
 function reload(packg) {
