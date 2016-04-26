@@ -236,7 +236,7 @@ gulp.task('test:unit', function () {
 
 gulp.task('test:end', ['webdriver_update'], function () {
 
-    gulp.src('./test/e2e/**/*.spec.js')
+    gulp.src(__dirname + '/test/e2e/**/*.spec.js')
         .pipe(protractor({
             configFile: 'protractor.conf.js'
         }))
