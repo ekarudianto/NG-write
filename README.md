@@ -61,18 +61,18 @@ All of the testcases file are included on ```test``` folder on the root director
 
 This starter template project is done using several tools and frameworks such as :
 
-HTML 5 Boilerplate
-Jade template language
-Angularjs
-Sass
-Karma
-Protractor
-Gulp
-Twitter bootstrap
-jQuery
-json3
-Es5-shim
-Modernizr
+- HTML 5 Boilerplate
+- Jade template language
+- Angularjs
+- Sass
+- Karma
+- Protractor
+- Gulp
+- Twitter bootstrap
+- jQuery
+- json3
+- Es5-shim
+- Modernizr
 
 ### File structure
 
