@@ -1,7 +1,7 @@
 {
-  "name": "binding-angular",
-  "version": "1.0.0",
-  "description": "Angular starter project",
+  "name": "NG-write",
+  "version": "1.0.2",
+  "description": "A starter angularjs template project using the compilation of several tools and frameworks which are Angularjs, HTML 5 Boilerplate, Twitter bootsrap, Jade template engine, Gulp, Webpack, Karma, Protractor and many others !",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
