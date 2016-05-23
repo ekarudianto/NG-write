@@ -3,7 +3,7 @@
 - 
 
 ### Changed 
-- 
+- Added unit test on travis ci integrations setting
 
 ## [1.0.2] - 2016-05-23
 ### Added
