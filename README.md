@@ -1,4 +1,4 @@
-## NG-write
+## NG-write [![Build Status](https://travis-ci.org/ekarudianto/NG-write.svg?branch=develop)](https://travis-ci.org/ekarudianto/NG-write)
 
 A starter angularjs template project using the compilation of several tools and frameworks which are Angularjs, HTML 5 Boilerplate, Twitter bootsrap, Jade template engine, Gulp, Webpack, Karma, Protractor and many others !
 
