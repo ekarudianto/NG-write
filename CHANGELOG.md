@@ -4,6 +4,7 @@
 
 ### Changed 
 - Added unit test on travis ci integrations setting
+- Changed travis ci badge branch monitoring into master from develop
 
 ## [1.0.2] - 2016-05-23
 ### Added
