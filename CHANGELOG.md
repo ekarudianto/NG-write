@@ -1,6 +1,6 @@
 ## [Unreleased]
 ### Added
-- 
+- Adding badge.fury.io on knowing software version
 
 ### Changed 
 - Added unit test on travis ci integrations setting
