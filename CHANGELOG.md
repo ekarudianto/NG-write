@@ -1,6 +1,7 @@
 ## [Unreleased]
 ### Added
 - Adding badge.fury.io on knowing software version
+- Adding Gemnasium badge for monitoring dependency packages version
 
 ### Changed 
 - Added unit test on travis ci integrations setting
