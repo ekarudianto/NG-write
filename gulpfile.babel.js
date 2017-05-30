@@ -215,10 +215,6 @@ gulp.task('connect', function () {
     return createWebServer(config.app);
 });
 
-gulp.task('connect:dist', function () {
-    return createWebServer(config.dist);
-});
-
 /**
  * Reloader tasks
  */
@@ -237,10 +233,6 @@ gulp.task('reload:dist', function () {
 
 gulp.task('watch', function () {
     return watcher(config.app);
-});
-
-gulp.task('watch:dist', function () {
-    return watcher(config.dist);
 });
 
 /**
@@ -303,12 +295,8 @@ gulp.task('test:end', ['webdriver_update'], function () {
 
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['server']);
 
 gulp.task('build', gulpsync.sync(['clean:dist', 'copy:dist', 'create-bundle:dist', 'sass:dist', 'copy-server-configs', 'copy-vendors']));
 
 gulp.task('server', gulpsync.sync(['clean', 'copy', 'create-bundle', 'sass', 'connect', 'watch']));
-
-gulp.task('server:dist', gulpsync.sync(['build', 'connect:dist', 'watch:dist']));
-
-
