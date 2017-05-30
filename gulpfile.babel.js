@@ -1,5 +1,8 @@
 'use strict';
 
+
+import './gulpfiles/server';
+
 var gulp = require('gulp'),
     clean = require('gulp-clean'),
     webpack = require('webpack-stream'),
