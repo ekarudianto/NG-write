@@ -1,6 +1,6 @@
 {
   "name": "NG-write",
-  "version": "1.0.2",
+  "version": "1.6.0",
   "description": "A starter angularjs template project using the compilation of several tools and frameworks which are Angularjs, HTML 5 Boilerplate, Twitter bootsrap, Jade template engine, Gulp, Webpack, Karma, Protractor and many others !",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,8 @@
     "webpack": "^1.12.15",
     "webpack-stream": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "angular": "1.6"
+  },
+  "repository": "https://github.com/ekarudianto/NG-write.git"
 }
