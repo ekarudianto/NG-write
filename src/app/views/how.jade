@@ -1,0 +1,104 @@
+.container
+    h2 Installation
+
+    ol
+        li Please make sure that nodejs is installed in your system. Check nodejs <a href='https://nodejs.org/en/' target='_blank'>Here</a>.
+        li Please install <strong>Gulp</strong> and <strong>Bower</strong> for managing your task runners and dependency management globally by running this command on your command line interface.
+            pre
+                code npm install -g gulp-cli bower
+        li Clone the repository by running this command on your command line interface
+            pre
+                code git clone https://github.com/ekarudianto/NG-write.git
+        li Go to the project directories and run these command for fetching the <strong>Node dependencies</strong> and <strong>bower libraries</strong>
+            pre
+                code npm install && bower install
+        li Project should be ready to run, please run below command and open the project on <code>http://localhost:9010</code>
+            pre
+                code gulp server
+
+    h2 Gulp tasks
+
+    p Below are several main tasks that this project has :
+
+    ul
+        li <code>default</code>
+            ul
+                li It will run a <code>build</code> gulp task.
+        li <code>server</code>
+            ul
+                li Start a dev server using <code>gulp-connect</code>, serving the app folder.
+        li <code>server:dist</code>
+            ul
+                li Start a dist server using <code>gulp-connect</code>, serving the distribution folder.
+        li <code>build</code>
+            ul
+                li Build a distribution package. All of the packages are stored on distribution folder.
+        li <code>test:unit</code>
+            ul
+                li Start a unit testing using <code>Karma</code>.
+        li <code>test:end</code>
+            ul
+                li Start an end to end testing using <code>Protractor</code>.
+
+    h2 Testing
+
+    p NG-write using <a href="https://karma-runner.github.io/0.13/index.html" target="_blank">Karma</a> for unit testing, and <a href="http://www.protractortest.org/#/" target="_blank">Protractor</a> for end 2 end testing.
+     | Since NG-write is using protractor version 3, only nodejs v4 or newer version that only supporting protractor, be sure to installed the correct version.
+
+    p All of the testcases file are included on <code>test</code> folder on the root directory
+
+    h2 Credits
+
+    p This starter template project is done using several tools and frameworks such as :
+
+    ol
+        li HTML 5 Boilerplate
+        li Jade template language
+        li Angularjs
+        li Sass
+        li Karma
+        li Protractor
+        li Gulp
+        li Twitter bootstrap
+        li jQuery
+        li json3
+        li Es5-shim
+        li Modernizr
+
+    h2 File structure
+
+    pre
+        code
+          |  .
+          |  +-- app
+          |  |   +-- scripts
+          |  |       +-- controllers
+          |  |           +-- controllers.js //collections of controller are registered here
+          |  |           +-- home-controller.js
+          |  |           +-- how-to-use-controller.js
+          |  |       +-- directives
+          |  |           +-- directives.js //collections of directive are registered here
+          |  |           +-- version-directive.js
+          |  |       +-- filters
+          |  |           +-- filters.js //collections of filter are registered here
+          |  |           +-- reverse-filter.js
+          |  |       +-- services
+          |  |           +-- services.js //collections of service are registered here
+          |  |           +-- creator-service.js
+          |  |       +-- app.bootstrap.js //application bootstrap module
+          |  |       +-- app.config.js //application configuration constants
+          |  |       +-- app.js // initialization of application
+          |  |       +-- app.routes.js //application routes
+          |  |       +-- app.run.js //application run method
+          |  |       +-- index.js //application index
+          |  |   +-- styles
+          |  |       +-- _custom.scss //custom styling
+          |  |       +-- _mixins.scss //collections of mixin for styling
+          |  |       +-- style.scss //index styling
+          |  |   +-- vendors
+          |  |   +-- views
+          |  |       +-- home.jade
+          |  |       +-- how.jade
+          |  |   +-- index.jade
+          |  |___+-- layout.jade
+
